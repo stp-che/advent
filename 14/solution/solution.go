@@ -9,9 +9,6 @@ import (
 	"strings"
 )
 
-type itemObserver interface {
-}
-
 type Solution struct {
 	withFloorAt int
 }
