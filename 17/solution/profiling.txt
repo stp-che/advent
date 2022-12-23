@@ -1,0 +1,14 @@
+go test -cpuprofile ../../tmp/cpu17.prof -memprofile ../../tmp/mem17.prof -bench . -benchmem
+goos: linux
+goarch: amd64
+pkg: github.com/stp-che/advent/2022/17/solution
+cpu: AMD Ryzen 7 3750H with Radeon Vega Mobile Gfx  
+BenchmarkDropNextFigure-8   	 5542966	       197.9 ns/op	      11 B/op	       1 allocs/op
+PASS
+
+goos: linux
+goarch: amd64
+pkg: github.com/stp-che/advent/2022/17/solution
+cpu: AMD Ryzen 7 3750H with Radeon Vega Mobile Gfx  
+BenchmarkDropNextFigure-8   	 8576307	       138.1 ns/op	       8 B/op	       0 allocs/op
+PASS
