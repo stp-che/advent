@@ -46,12 +46,12 @@ func (s *Solution) Part2(inputPath string, t int) int {
 		}(out[i], bs[i])
 	}
 
-	sum := 0
+	prod := 1
 	for _, ch := range out {
-		sum += <-ch
+		prod *= <-ch
 	}
 
-	return sum
+	return prod
 }
 
 func (s *Solution) readData(inputPath string) []*blueprint {
@@ -128,6 +128,8 @@ func (b *blueprint) qLevel(t int) int {
 }
 
 func (b *blueprint) maxGeods(t int) int {
+	fmt.Println(b)
+
 	var rec func(int, resVal, resVal) int
 
 	// pad := "                                                                                    "
