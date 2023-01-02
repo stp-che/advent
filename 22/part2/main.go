@@ -10,7 +10,7 @@ import (
 
 func main() {
 	start := time.Now()
-	res := solution.New(0).Run(os.Args[1])
+	res := solution.New(50).Run(os.Args[1])
 	fmt.Println(res)
 	fmt.Printf("time taken: %v\n", time.Since(start))
 }
