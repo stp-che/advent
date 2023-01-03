@@ -29,19 +29,6 @@ func (s *Solution) Run1(inputPath string) int {
 	return steps
 }
 
-// func (s *Solution) RunTillStable(inputPath string) int {
-// 	sim := s.readData(inputPath)
-
-// 	rounds := 1
-// 	for sim.round() {
-// 		rounds++
-// 	}
-
-// 	// fmt.Println(sim.coveredGround())
-
-// 	return rounds
-// }
-
 func (s *Solution) readData(inputPath string) *simulation {
 	data, err := os.ReadFile(inputPath)
 	if err != nil {
